@@ -1,0 +1,16 @@
+{
+  "name": "cherryarts-site",
+  "version": "1.0.0",
+  "scripts": {
+    "sass:watch": "sass --watch src/styles/main.scss dist/styles.css --no-source-map",
+    "tailwind:watch": "tailwindcss -i ./dist/styles.css -o ./dist/final.css --watch",
+    "dev": "concurrently \"npm run sass:watch\" \"npm run tailwind:watch\""
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concurrently": "^8.2.0",
+    "postcss": "^8.4.37",
+    "sass": "^1.69.5",
+    "tailwindcss": "^4.0.15"
+  }
+}
