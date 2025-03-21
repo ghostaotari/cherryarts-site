@@ -1,5 +1,35 @@
 /*! tailwindcss v4.0.15 | MIT License | https://tailwindcss.com */
+.sticky {
+  position: sticky;
+}
+.z-50 {
+  z-index: 50;
+}
+.mx-auto {
+  margin-inline: auto;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+.hidden {
+  display: none;
+}
+.items-center {
+  align-items: center;
+}
+.place-self-center {
+  place-self: center;
+}
+.focus\:outline-none {
+  &:focus {
+    --tw-outline-style: none;
+    outline-style: none;
+  }
+}
 body {
-  font-family: "Arial", sans-serif;
+  font-family: "Work Sans", sans-serif;
   font-size: 1rem;
 }

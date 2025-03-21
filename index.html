@@ -3,13 +3,72 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Cherry Arts</title>
-  <link href="dist/final.css" rel="stylesheet" />
+  <title>Responsive Navbar</title>
+
+  <link rel="stylesheet" src="dist/final.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-<body class="bg-pink-100 text-gray-800">
-  <div class="p-8">
-    <h1 class="text-3xl font-bold">Hello, Cherry!</h1>
-    <p class="mt-2">This is your Tailwind + Sass setup.</p>
-  </div>
+<body class="bg-gray-50">
+
+  <header class="m-2 rounded-lg">
+    <nav class="bg-white shadow-lg shadow-purple-300/30 px-4 py-3 sticky top-0 z-50" x-data="{ open: false }">
+      <div class="max-w-7xl mx-auto items-center">
+        <div class="text-2xl font-bold text-gray-800 place-self-center my-4">Logo</div>
+
+        <!-- Desktop Nav -->
+        <ul class="hidden md:flex gap-6 text-gray-700 font-medium place-self-center">
+          <li><a href="#" class="hover:text-blue-500">All Items</a></li>
+          <li><a href="#" class="hover:text-blue-500">UI/UX Design</a></li>
+          <li><a href="#" class="hover:text-blue-500">Web Templates</a></li>
+          <li><a href="#" class="hover:text-blue-500">Logo Design</a></li>
+          <li><a href="#" class="hover:text-blue-500">Illustrations</a></li>
+        </ul>
+
+        <!-- Hamburger -->
+        <button
+          @click="open = !open"
+          class="md:hidden text-gray-700 focus:outline-none"
+          aria-label="Toggle Menu"
+        >
+          <svg x-show="!open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+          <svg x-show="open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
+            viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M6 18L18 6M6 6l12 12" />
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Nav -->
+      <div x-show="open" class="md:hidden mt-3 space-y-2 px-2 text-gray-700 font-medium">
+        <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">Home</a>
+        <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">About</a>
+        <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">Services</a>
+        <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">Blog</a>
+        <a href="#" class="block px-3 py-2 rounded hover:bg-gray-100">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="flex">
+      <h1>Hello! I'm cherry.</h1>
+      <div>
+        <p class="font-sans text-xl">Welcome to my portfolio.</p>
+        <p class="font-sans text-xl">From traditional, to 3D, and everything in between.</p>
+      </div>
+    </div>
+  </main>
+
 </body>
 </html>
