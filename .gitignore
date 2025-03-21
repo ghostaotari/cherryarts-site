@@ -1,2 +1,9 @@
-node_modules
-dist/*.css
+# Ignore node_modules and other build junk
+node_modules/
+package-lock.json
+
+# Ignore temp Sass output, but not final.css
+dist/*
+!dist/final.css
+
+

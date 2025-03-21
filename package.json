@@ -2,13 +2,15 @@
   "name": "cherryarts-site",
   "version": "1.0.0",
   "scripts": {
-    "sass:watch": "sass --watch src/styles/main.scss dist/styles.css --no-source-map",
-    "tailwind:watch": "tailwindcss -i ./dist/styles.css -o ./dist/final.css --watch",
-    "dev": "concurrently \"npm run sass:watch\" \"npm run tailwind:watch\""
+    "sass": "sass src/styles/main.scss dist/styles.css --no-source-map",
+    "tailwind": "tailwindcss -i ./dist/styles.css -o ./dist/final.css",
+    "build": "npm run sass && npm run tailwind",
+    "prepare": "husky"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.21",
     "concurrently": "^8.2.2",
+    "husky": "^9.1.7",
     "postcss": "^8.5.3",
     "sass": "^1.86.0",
     "tailwindcss": "^4.0.15"
