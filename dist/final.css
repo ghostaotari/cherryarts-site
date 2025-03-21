@@ -69,6 +69,9 @@
 .place-self-center {
   place-self: center;
 }
+.text-center {
+  text-align: center;
+}
 .opacity-0 {
   opacity: 0%;
 }
