@@ -8,6 +8,7 @@ module.exports = {
       fontFamily: {
         sans: ["Work Sans", "sans-serif"],
         inter: ["Inter", "san-serif"],
+        quicksand: ["Quicksand", "sans-serif"],
       },
       colors: {
         cherry: "#EC1C23",

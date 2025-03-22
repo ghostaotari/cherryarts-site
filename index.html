@@ -13,13 +13,13 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 
 </head>
 <body class="bg-white">
 
-  <header class="">
-    <nav class="bg-white shadow-lg shadow-rose-300/20 px-4 py-3 sticky top-0 z-50" x-data="{ open: false }">
+  <header class="sticky top-0 z-50 transition duration-300 ease-in-out m-2 rounded">
+    <nav class="bg-white/70 shadow-lg shadow-rose-300/20 px-4 rounded-md py-3 backdrop-blur-sm" x-data="{ open: false }">
       <div class="max-w-7xl mx-auto items-center flex justify-between md:flex-col">
         <div class="text-2xl font-bold text-gray-800 md:place-self-center md:mb-4 md:mt-6 my-4">
           <svg width="118" height="" viewBox="0 0 214 75" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -203,11 +203,39 @@
       </div>
     </section>
 
-    <div class="grid grid-cols-12 grid-rows-4 gap-4 max-w-screen-xl mx-auto my-12">
+    <div class="grid grid-cols-12 grid-rows-6 gap-4 max-w-screen-xl mx-auto my-12">
 
-      <img src="img/cloudberry-hifi.jpg" alt="thumbnail of cloudberry farms high fidelity prototype" class="lg:col-span-6 lg:row-span-4 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-4">
-      <img src="img/cloudberry-desktop-wireframe.jpg" alt="thumbnail of cloudberry farms desktop prototype" class="lg:col-span-6 lg:row-span-2 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-4">
-      <img src="img/cloudberry-mobile-wireframe.jpg" alt="thumbnail of cloudberry farms mobile prototype" class="lg:col-span-6 lg:row-span-2 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-4">
+      <div class="relative group w-full md:col-span-6 md:row-span-4 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-4 cursor-pointer overflow-hidden">
+        <img src="img/cloudberry-hifi.jpg" alt="thumbnail of cloudberry farms high fidelity prototype" class="w-full h-auto transition-transform duration-300 group-hover:scale-105">
+
+        <div class="absolute inset-0 bg-rose-300 bg-opacity-60 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+          <img src="img/cloudberry-logo.svg" alt="cloudberry project logo" class="w-40 md:w-56 lg:w-72 h-auto mb-2">
+          <p class="font-sans text-white font-light text-xl ">Desktop & Mobile Mockup</p>
+        </div>
+      </div>
+
+      <div class="relative group w-full md:col-span-6 md:row-span-2 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-2 cursor-pointer overflow-hidden">
+        <img src="img/cloudberry-desktop-wireframe.jpg" alt="thumbnail of cloudberry farms desktop prototype" class="w-auto h-full transition-transform duration-300 group-hover:scale-105">
+
+        <div class="absolute inset-0 bg-rose-300 bg-opacity-60 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+          <img src="img/cloudberry-only.svg" alt="cloudberry logo" class="w-20 md:w-48 h-auto mb-2">
+          <p class="font-sans text-white font-light text-xl ">Desktop Wireframe</p>
+        </div>
+      </div>
+
+      <div class="relative group w-full md:col-span-6 md:row-span-2 rounded-md shadow-lg shadow-rose-400/20 col-span-12 row-span-2 cursor-pointer overflow-hidden">
+        <img src="img/cloudberry-mobile-wireframe.jpg" alt="thumbnail of cloudberry farms mobile prototype" class="w-auto h-full transition-transform duration-300 group-hover:scale-105">
+
+        <div class="absolute inset-0 bg-rose-300 bg-opacity-60 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+          <img src="img/cloudberry-only.svg" alt="cloudberry logo" class="w-20 md:w-48 h-auto mb-2">
+          <p class="font-sans text-white font-light text-xl ">Mobile Wireframe</p>
+        </div>
+      </div>
+
+      <div class="md:col-span-3 md:row-span-2 shadow-lg shadow-rose-400/20 col-span-12"><img src="img/focus-photography-hifi.jpg" alt="thumbnail of focus photography desktop and mobile mockup" class="rounded-md"></div>
+      <div class="md:col-span-3 md:row-span-2 shadow-lg shadow-rose-400/20 col-span-12 row-span-4"> <img src="img/focus-photography-wireframe.jpg" alt="thumbnail of focus photography mobile wireframe" class="rounded-md"></div>
+      <div class="md:col-span-3 md:row-span-2 shadow-lg shadow-rose-400/20 col-span-12 row-span-4"><img src="img/yummy-bites-landing.jpg" alt="thumbnail of yummy bites desktop mockup redesign" class="rounded-md"></div>
+      <div class="md:col-span-3 md:row-span-2 shadow-lg shadow-rose-400/20 col-span-12 row-span-4"><img src="img/ppo-project-landing.jpg" alt="thumbnail of purple onion project desktop mockup" class="rounded-md"></div>
 
     </div>
 
@@ -216,3 +244,5 @@
 
 </body>
 </html>
+
+
