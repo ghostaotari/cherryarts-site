@@ -1,22 +1,9 @@
 {
-  "name": "cherryarts-site",
-  "version": "1.0.0",
-  "scripts": {
-    "sass": "sass src/styles/main.scss dist/styles.css --no-source-map",
-    "tailwind": "tailwindcss -i ./dist/styles.css -o ./dist/final.css",
-    "build": "npm run sass && npm run tailwind",
-    "prepare": "husky"
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.21",
-    "concurrently": "^8.2.2",
-    "husky": "^9.1.7",
-    "postcss": "^8.5.3",
-    "sass": "^1.86.0",
-    "tailwindcss": "^4.0.15"
-  },
   "dependencies": {
-    "@tailwindcss/cli": "^4.0.15",
-    "lucide-react": "^0.483.0"
+    "@tailwindcss/cli": "^4.0.17",
+    "tailwindcss": "^4.0.17"
+  },
+  "scripts": {
+    "dev": "npx @tailwindcss/cli -i ./src/input.css -o ./src/output.css --watch"
   }
 }

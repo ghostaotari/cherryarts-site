@@ -1,0 +1,6 @@
+@import "tailwindcss";
+
+@theme {
+    --font-quicksand: "Quicksand", "sans-serif";
+    --color-cherry: #EC1C23;
+}
