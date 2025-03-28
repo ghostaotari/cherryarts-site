@@ -5,15 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Cherry Santos - Portfolio Home</title>
 
-  <link rel="stylesheet" src="dist/final.css">
+  <link rel="stylesheet" href="../src/output.css">
   <link rel="icon" type="image/png" sizes="16x16" href="img/favicon.png">
 
-  <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Quicksand:wght@300..700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 
 </head>
 <body class="bg-white">
@@ -31,11 +30,10 @@
           </div>
 
         <!-- Desktop Nav -->
-        <ul class="hidden md:flex gap-6 text-black font-inter mb-4 mt-5 font-semibold place-self-center" x-data="{ active: 'All Items' }">
+        <ul class="hidden md:flex gap-6 text-black font-inter mb-4 mt-5 font-semibold place-self-center" x-data="{ active: 'Web Templates' }">
 
           <!-- All Items -->
           <li class="relative group">
-            <!-- Leaf icon for active link -->
             <span x-show="active === 'All Items'"
                   class="absolute -top-3 left-1/2 transform -translate-x-1/2 transition-all"
                   x-transition.opacity>
@@ -44,10 +42,9 @@
               </svg>
             </span>
 
-            <!-- Hover & Clickable Link -->
             <a href="index.html" @click="active = 'All Items'"
               :class="{ 'text-red-600 font-bold': active === 'All Items' }"
-              class="hover:text-cherry font-inter px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -72,7 +69,7 @@
 
             <a href="#" @click="active = 'UI/UX Design'"
               :class="{ 'text-red-600 font-bold': active === 'UI/UX Design' }"
-              class="hover:text-red-600 hover:font-bold px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -96,7 +93,7 @@
 
             <a href="#" @click="active = 'Web Templates'"
               :class="{ 'text-red-600 font-bold': active === 'Web Templates' }"
-              class="hover:text-red-600 hover:font-bold px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -120,7 +117,7 @@
 
             <a href="#" @click="active = 'Logo Designs'"
               :class="{ 'text-red-600 font-bold': active === 'Logo Designs' }"
-              class="hover:text-red-600 hover:font-bold px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -144,7 +141,7 @@
 
             <a href="#" @click="active = 'Illustrations'"
               :class="{ 'text-red-600 font-bold': active === 'Illustrations' }"
-              class="hover:text-red-600 hover:font-bold px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -168,7 +165,7 @@
 
             <a href="about.html" @click="active = 'About Me'"
               :class="{ 'text-red-600 font-bold': active === 'About Me' }"
-              class="hover:text-red-600 hover:font-bold px-3 relative block group">
+              class="hover:text-red-600 px-3 relative block group">
 
               <!-- Leaf on hover -->
               <span class="absolute -top-3 left-1/2 transform -translate-x-1/2 opacity-0 group-hover:opacity-100 transition-opacity">
@@ -213,9 +210,42 @@
       </div>
     </nav>
   </header>
-  <main>
-    <section class="container mx-auto">
-        <img src="img/cloudberry/cloudberry-moodboard.jpg" alt="cloudberry mood board">
+  <main class="container  mx-auto p-4">
+    <section class="mx-auto m-12">
+      <div class="mx-auto lg:max-w-[50%] transition  mb-4">
+        <svg width="72" height="56" viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M40.9135 51.2216C42.4724 51.8348 44.1643 52.1708 45.9324 52.1708C49.1502 52.1708 52.1157 51.0581 54.486 49.1861C56.3345 51.0235 58.9548 52.1703 61.8607 52.1703C67.4598 52.1703 71.9988 47.9127 71.9988 42.6607C71.9988 37.4088 67.4598 33.1512 61.8607 33.1512C61.008 33.1512 60.1798 33.2499 59.3885 33.4359C57.6269 27.5037 52.2689 23.1893 45.9324 23.1893C45.1221 23.1893 44.3278 23.2598 43.555 23.3953C40.735 17.6137 35.1678 13.6792 28.7608 13.6792C20.4052 13.6792 13.4779 20.3709 12.2095 29.1242C11.8681 29.0917 11.5222 29.0751 11.1726 29.0751C5.00212 29.0751 0 34.245 0 40.6224C0 46.9998 5.00212 52.1698 11.1726 52.1698C12.164 52.1698 13.1253 52.0363 14.0405 51.7858C17.1122 53.9528 21.8239 55.3397 27.1065 55.3397C32.8343 55.3397 37.8909 53.7092 40.9135 51.2216Z" fill="#A6A0CC"/>
+          <path d="M45.3109 18.394C43.4657 13.8925 43.5395 3.91164 58.5965 0C54.1681 7.68359 57.4895 19.3254 45.3109 18.394Z" fill="#A6A0CC"/>
+          <path d="M53.477 20.789C54.7801 18.4332 59.1204 15.0346 66.0569 20.2864C61.1927 20.9876 57.3172 26.4446 53.477 20.789Z" fill="#A6A0CC"/>
+          </svg>
+          <h1 class="text-2xl font-quicksand font-semibold text-lavender flex flex-col mb-2">Cloudberry <span>Meadows</span></h1>
+
+          <p class="font-open font-light mb-2 text-lg">A soothing website redesign for a small farm. I took the fluffy and dreamy aspects of the brand and translated it into a modern design.</p>
+
+          <p class="font-open font-light text-lg">Focusing on a light colour palette to contrast the grit of farming. Who said farming can’t be dreamy?</p>
+      </div>
+        <div class="grid grid-cols-12 gap-4 max-w-screen-xl mx-auto my-12">
+          <img src="../img/cloudberry/cloudberry-moodboard.jpg" alt="cloudberry mood board" class="w-full rounded-md shadow-lg shadow-rose-400/20 col-span-12 lg:col-start-2 lg:col-span-10">
+
+          <!-- Cloudberry Full Mockup -->
+          <a href="desktop-hifi.html" class="relative group w-full md:col-span-5 rounded-md shadow-lg shadow-rose-400/20 col-span-12 md:col-span-6 lg:col-start-2 lg:col-span-5 cursor-pointer overflow-hidden">
+            <img src="../img/cloudberry/cb-desktop.png" alt="thumbnail of cloudberry farms desktop prototype" class="w-auto h-full transition-transform duration-300 group-hover:scale-105">
+
+            <div class="absolute inset-0 bg-rose-300/60 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+              <p class="font-quicksand text-white font-semibold text-2xl ">Desktop View</p>
+            </div>
+          </a>
+
+          <!-- Cloudberry desktop wireframe -->
+          <div class="relative group w-full md:col-span-5 rounded-md shadow-lg shadow-rose-400/20 col-span-12 md:col-span-6 lg:col-span-5  cursor-pointer overflow-hidden">
+            <img src="../img/cloudberry/cb-mobile.png" alt="thumbnail of cloudberry farms mobile prototype" class="w-auto h-full transition-transform duration-300 group-hover:scale-105">
+
+            <div class="absolute inset-0 bg-rose-300/60 backdrop-blur-sm flex flex-col items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+
+              <p class="font-quicksand text-white font-semibold text-2xl ">Mobile View</p>
+            </div>
+          </div>
+        </div>
     </section>
   </main>
 </body>
