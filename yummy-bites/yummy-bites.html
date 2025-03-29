@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cloudberry Desktop Hifi</title>
+    <title>Yummy Bites Site Redesign</title>
 
     <link rel="stylesheet" href="../src/output.css" />
     <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon.png" />
@@ -268,7 +268,7 @@
                 <a href="about.html" class="block px-3 py-2 rounded hover:bg-gray-100">About Me</a>
             </div>
         </nav>
-    </header>
+      </header>
 
     <button x-data="{ show: false }" x-init="
         window.addEventListener('scroll', () => {
@@ -282,76 +282,41 @@
         ↑ Top
     </button>
 
-    <main class="container mx-auto p-4">
-        <section class="mx-auto m-12">
-            <div class="mx-auto lg:max-w-[50%] transition mb-4">
-                <svg width="72" height="56" viewBox="0 0 72 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M40.9135 51.2216C42.4724 51.8348 44.1643 52.1708 45.9324 52.1708C49.1502 52.1708 52.1157 51.0581 54.486 49.1861C56.3345 51.0235 58.9548 52.1703 61.8607 52.1703C67.4598 52.1703 71.9988 47.9127 71.9988 42.6607C71.9988 37.4088 67.4598 33.1512 61.8607 33.1512C61.008 33.1512 60.1798 33.2499 59.3885 33.4359C57.6269 27.5037 52.2689 23.1893 45.9324 23.1893C45.1221 23.1893 44.3278 23.2598 43.555 23.3953C40.735 17.6137 35.1678 13.6792 28.7608 13.6792C20.4052 13.6792 13.4779 20.3709 12.2095 29.1242C11.8681 29.0917 11.5222 29.0751 11.1726 29.0751C5.00212 29.0751 0 34.245 0 40.6224C0 46.9998 5.00212 52.1698 11.1726 52.1698C12.164 52.1698 13.1253 52.0363 14.0405 51.7858C17.1122 53.9528 21.8239 55.3397 27.1065 55.3397C32.8343 55.3397 37.8909 53.7092 40.9135 51.2216Z"
-                        fill="#A6A0CC" />
-                    <path
-                        d="M45.3109 18.394C43.4657 13.8925 43.5395 3.91164 58.5965 0C54.1681 7.68359 57.4895 19.3254 45.3109 18.394Z"
-                        fill="#A6A0CC" />
-                    <path
-                        d="M53.477 20.789C54.7801 18.4332 59.1204 15.0346 66.0569 20.2864C61.1927 20.9876 57.3172 26.4446 53.477 20.789Z"
-                        fill="#A6A0CC" />
-                </svg>
-                <h1 class="text-2xl font-quicksand font-semibold text-lavender flex flex-col mb-2">
-                    Cloudberry <span>Meadows Desktop</span>
-                </h1>
+    <main class="mx-auto">
+
+        <section class="bg-linear-to-t from-slate-300 to-white mx-auto p-4 lg:py-12">
+
+            <div class="my-2 mx-auto">
+                <div class="md:max-w-[60%] place-self-center text-slate-700 text-lg">
+                    <h2 class="font-semibold font-quicksand text-xl mb-2">Project Details</h2>
+                    <p class="text-lg font-light">This is the first landing redesign we had to do for my UI/UX class. The first time exploring typography combinations and type scales. Lots of design choices were made without coding in mind. Looking back I would change a few of the skewed boxes to make it easier for development. </p>
+
+                    <h2 class="font-semibold font-quicksand mt-4 mb-2 text-xl">Programs used</h2>
+                    <div class="flex flex-wrap gap-2">
+                        <img src="../img/icons/figma.svg" alt="figma icon" class="w-[50px] h-auto shadow rounded-xl">
+                        <img src="../img/icons/illustrator.svg" alt="illustrator icon" class="w-[50px] h-auto shadow rounded-xl">
+                        <img src="../img/icons/photoshop.svg" alt="photoshop icon" class="w-[50px] h-auto shadow rounded-xl">
+                    </div>
+
+                    <div class="mt-8">
+                        <a href="#old" alt="landing section"
+                        class="py-4 px-6 shadow-md shadow-rose-300/30 bg-amber-400 hover:bg-amber-300 transition-all rounded-md font-semibold font-quicksand uppercase text-black">View Old Version</a>
+                    </div>
+                </div>
             </div>
 
-            <div class="flex flex-wrap gap-2 justify-center mt-8 mb-4">
-                <a href="#landing" alt="landing section"
-                    class="py-2 px-4 shadow-md shadow-rose-300/30 bg-lavender-dark hover:bg-lavender hover:text-white transition-all rounded-md font-semibold font-quicksand uppercase text-white">Home
-                    Section</a>
-                <a href="#u-pick" alt="u-pick section"
-                    class="py-2 px-4 shadow-md shadow-rose-300/30 bg-lavender-dark hover:bg-lavender hover:text-white transition-all rounded-md font-semibold font-quicksand uppercase text-white">U-Pick
-                    Section</a>
-                <a href="#visit" alt="visit section"
-                    class="py-2 px-4 shadow-md shadow-rose-300/30 bg-lavender-dark hover:bg-lavender hover:text-white transition-all rounded-md font-semibold font-quicksand uppercase text-white">Visit
-                    Section</a>
-                <a href="#ui-elements" alt="ui-elements section"
-                    class="py-2 px-4 shadow-md shadow-rose-300/30 bg-lavender-dark hover:bg-lavender hover:text-white transition-all rounded-md font-semibold font-quicksand uppercase text-white">UI
-                    Elements</a>
+            <div class="mx-auto my-24">
+                <img src="../img/yummy-bites/landing.png" alt="yummy bites landing page redesigned version"
+                class="shadow-slate-300/70 shadow rounded-lg mx-auto">
             </div>
 
-            <div class="place-self-center flex flex-col gap-4">
-                <section id="landing" class="scroll-mt-50">
-                    <h2 class="font-quicksand text-2xl font-semibold mb-4 mt-12 ps-4">
-                        Home Page
-                    </h2>
-                    <img src="../img/cloudberry/desktop/home.png" alt="landing page of cloudberry meadows desktop view"
-                        class="shadow-rose-300/30 shadow rounded-lg" />
-                </section>
-
-                <section id="u-pick" class="scroll-mt-50">
-                    <h2 class="font-quicksand text-2xl font-semibold mb-4 mt-12 ps-4">
-                        U-Pick Page
-                    </h2>
-                    <img src="../img/cloudberry/desktop/u-pick.png"
-                        alt="u-pick farm page of cloudberry meadows desktop view"
-                        class="shadow-rose-300/30 shadow rounded-lg" />
-                </section>
-
-                <section id="visit" class="scroll-mt-50">
-                    <h2 class="font-quicksand text-2xl font-semibold mb-4 mt-12 ps-4">
-                        Visit the Farm Page
-                    </h2>
-                    <img src="../img/cloudberry/desktop/visit.png"
-                        alt="visit faq page of cloudberry meadows desktop view"
-                        class="shadow-rose-300/30 shadow rounded-lg" />
-                </section>
-
-                <section id="ui-elements" class="scroll-mt-50">
-                    <h2 class="font-quicksand text-2xl font-semibold mb-4 mt-12 ps-4">
-                        UI Elements
-                    </h2>
-                    <img src="../img/cloudberry/desktop/ui-elements-mini.png" alt="some ui elements for the site"
-                        class="shadow-rose-300/30 shadow rounded-lg" />
-                </section>
+            <div id="old" class="mx-auto my-24 scroll-mt-50">
+                <img src="../img/yummy-bites/landing-old.png" alt="old yummy bites landing page design"
+                class="shadow-slate-300/70 shadow rounded-lg mx-auto">
             </div>
+
         </section>
+
     </main>
 </body>
 

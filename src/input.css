@@ -3,6 +3,8 @@
 @theme {
     --font-quicksand: "Quicksand", sans-serif;
     --font-open: "Open Sans", sans-serif;
+    --font-inter: "Inter", sans-serif;
+
     --color-cherry: #EC1C23;
     --color-lavender: #A6A0CC;
     --color-lavender-dark: #766CB5;
