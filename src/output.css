@@ -459,6 +459,9 @@
   .items-center {
     align-items: center;
   }
+  .justify-around {
+    justify-content: space-around;
+  }
   .justify-between {
     justify-content: space-between;
   }
@@ -1021,6 +1024,41 @@
   .lg\:pb-12 {
     @media (width >= 64rem) {
       padding-bottom: calc(var(--spacing) * 12);
+    }
+  }
+  .xl\:col-span-5 {
+    @media (width >= 80rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
+  .xl\:col-span-7 {
+    @media (width >= 80rem) {
+      grid-column: span 7 / span 7;
+    }
+  }
+  .xl\:grid-cols-12 {
+    @media (width >= 80rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
+    }
+  }
+  .xl\:justify-baseline {
+    @media (width >= 80rem) {
+      justify-content: baseline;
+    }
+  }
+  .\32 xl\:col-span-5 {
+    @media (width >= 96rem) {
+      grid-column: span 5 / span 5;
+    }
+  }
+  .\32 xl\:col-span-7 {
+    @media (width >= 96rem) {
+      grid-column: span 7 / span 7;
+    }
+  }
+  .\32 xl\:grid-cols-12 {
+    @media (width >= 96rem) {
+      grid-template-columns: repeat(12, minmax(0, 1fr));
     }
   }
 }

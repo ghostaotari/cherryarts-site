@@ -44,7 +44,7 @@
               </svg>
             </span>
 
-            <a href="index.html" @click="active = 'All Items'"
+            <a href="index.html"
               :class="{ 'text-red-600 font-bold': active === 'All Items' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -69,7 +69,7 @@
               </svg>
             </span>
 
-            <a href="#" @click="active = 'UI/UX Design'"
+            <a href="#" 
               :class="{ 'text-red-600 font-bold': active === 'UI/UX Design' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -93,7 +93,7 @@
               </svg>
             </span>
 
-            <a href="#" @click="active = 'Web Templates'"
+            <a href="#"
               :class="{ 'text-red-600 font-bold': active === 'Web Templates' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -117,7 +117,7 @@
               </svg>
             </span>
 
-            <a href="#" @click="active = 'Logo Designs'"
+            <a href="#"
               :class="{ 'text-red-600 font-bold': active === 'Logo Designs' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -141,7 +141,7 @@
               </svg>
             </span>
 
-            <a href="#" @click="active = 'Illustrations'"
+            <a href="#"
               :class="{ 'text-red-600 font-bold': active === 'Illustrations' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -165,7 +165,7 @@
               </svg>
             </span>
 
-            <a href="about.html" @click="active = 'About Me'"
+            <a href="about.html"
               :class="{ 'text-red-600 font-bold': active === 'About Me' }"
               class="hover:text-red-600 px-3 relative block group">
 
@@ -212,8 +212,9 @@
       </div>
     </nav>
   </header>
+
   <main class="container m-12 p-4 mx-auto">
-    <section class="mx-auto max-w-[75%]">
+    <section class="mx-auto lg:max-w-[75%]">
       <h1 class="text-3xl flex-1 font-light font-sans flex lg:flex-row items-center gap-2">
         <span class="text-4xl font-light font-sans">Hey! I'm</span>
         <span>
@@ -227,8 +228,8 @@
           </svg>
         </span>
       </h1>
-      <div class="grid lg:grid-cols-12 gap-4">
-        <div class=" col-span-12 lg:col-span-5">
+      <div class="grid 2xl:grid-cols-12 gap-4">
+        <div class=" col-span-12 2xl:col-span-5">
           <img src="img/me.png" alt="a photo of me on a skateboard"
             class="rounded-md shadow-lg shadow-rose-300/20 lg:max-w- mt-4">
 
@@ -239,10 +240,10 @@
 
           </div>
         </div>
-        <div class=" col-span-12 lg:col-span-7">
+        <div class=" col-span-12 2xl:col-span-7">
           <div class="p-6 rounded-md shadow-lg shadow-rose-300/20">
             <h2 class="text-2xl mb-2 font-quicksand text-cherry font-semibold">A bit about me</h2>
-            <p><span class="italic text-lg">Cherry is my real name,</span> just like the fruit. I've been a creator since birth with a growing repetoire. Any form of creation, I'm down to learn it or try it at least once. With my newest endeavor I am happy to add, I am a certified Web designer and developer too. </p>
+            <p><span class="italic text-lg">Cherry is my real name,</span> just like the fruit. I've been a creator since birth with a growing repetoire. Any form of creation, I'm down to learn it or try it at least once. After a good 2 year struggle I'm happy to say I'm an Dean's-list level Web Developer! </p>
 
             <p class="pt-4"><span class="italic text-lg">So</span>, be it traditional art with painting or charcoal, to pottery and carpets, I can make it all. Want a new logo for your company? Or a new t-shirt design for your nephew. Or even a new site for your church. Let me do it!</p>
           </div>
@@ -260,11 +261,7 @@
               <img src="img/icons/maya.svg" alt="maya icon" class="w-[50px] h-auto shadow rounded-md">
               <img src="img/icons/zbrush.svg" alt="zbrush icon" class="w-[50px] h-auto shadow rounded-xl">
             </div>
-          </div>
-
-          <div class="p-6 rounded-md shadow-lg shadow-rose-300/20">
-            <h2 class="text-2xl mb-4 font-quicksand text-cherry font-semibold">Programming languages</h2>
-            <p class="mb-4">I'm still trying to expand this list</p>
+            <h2 class="text-2xl my-4 font-quicksand text-cherry font-semibold">Web development languages</h2>
             <div class="flex flex-wrap gap-2">
               <img src="img/icons/html.svg" alt="html5 icon" class="w-[50px] h-auto shadow rounded-xl">
               <img src="img/icons/css.svg" alt="css icon" class="w-[50px] h-auto shadow rounded-xl">
@@ -276,6 +273,52 @@
               <img src="img/icons/next.svg" alt="next icon" class="w-[50px] h-auto shadow rounded-xl">
               <img src="img/icons/mui.svg" alt="mui icon" class="w-[50px] h-auto shadow rounded-xl">
               <img src="img/icons/laravel.svg" alt="laravel icon" class="w-[50px] h-auto shadow rounded-xl">
+              <img src="img/icons/php.svg" alt="php icon" class="w-[50px] h-auto shadow rounded-xl">
+              <img src="img/icons/mysql.svg" alt="my sql icon" class="w-[50px] h-auto shadow rounded-xl">
+            </div>
+          </div>
+
+          <div class="p-6 rounded-md shadow-lg shadow-rose-300/20">
+            <h2 class="text-2xl mb-4 font-quicksand text-cherry font-semibold">Additional skills</h2>
+            <div class="flex gap-6 justify-between xl:justify-none flex-wrap">
+              <ul>
+                <li>JQuery</li>
+                <li>RESTful APIs</li>
+                <li>SEO/Marketing</li>
+                <li>Google Analytics</li>
+                <li>Product Marketing</li>
+                <li>Web Optimization</li>
+                <li>Keyword Research</li>
+                <li>Web Accessibility</li>
+                <li>Wireframing</li>
+                <li>Prototyping</li>
+              </ul>
+
+              <ul class="">
+                <li>Color Theory</li>
+                <li>Photo Composition</li>
+                <li>Typography</li>
+                <li>Character Design</li>
+                <li>Storyboarding</li>
+                <li>Animatics</li>
+                <li>3D Modelling</li>
+                <li>Texture Creation</li>
+                <li>Video/Photo Editing</li>
+                <li>Photography</li>
+              </ul>
+
+              <ul class="">
+                <li>Embroidery</li>
+                <li>Sewing</li>
+                <li>Screen Printing</li>
+                <li>Heatpress</li>
+                <li>Painting</li>
+                <li>Sketching</li>
+                <li>Model Building</li>
+                <li>Mural Painting</li>
+                <li>Poster Design</li>
+                <li>Professional Cat Caretaker</li>
+              </ul>
             </div>
           </div>
 
